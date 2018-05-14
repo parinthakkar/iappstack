@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devidev-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IAppStack</title>
+  <link rel="shortcut icon" type="image/x-icon" href="<%= asset_path('icon.png') %>">
+  <%= stylesheet_link_tag    'home', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- Loader -->
+<!-- <div class="preloader">
+	<div class="loader theme_background_color">
+		<span></span>
+	</div>
+</div> -->
+	<div class="wrapper">
+		<nav  class=" nim-menu navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="index.html">N<span class="themecolor">i</span>M</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home" class="page-scroll">Home</a></li>
+            <li><a href="#one" class="page-scroll">About</a></li>
+            <li><a href="#two" class="page-scroll">Our Works</a></li>
+            <li><a href="#three" class="page-scroll">Team</a></li>
+            <li><a href="#four" class="page-scroll">Inspiration</a></li>
+            <li><a href="#five" class="page-scroll">Status</a></li>
+            <li><a href="#six" class="page-scroll">Testimonials</a></li>
+             <li><a href="#seven" class="page-scroll">Services</a></li>
+            <li><a href="#eight" class="page-scroll">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+		<%= yield %>
+	</div>
+	<%= render 'layouts/footer' %>
+	<%= javascript_include_tag 'application' %>
+</body>
+</html>
